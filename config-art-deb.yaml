@@ -1,0 +1,32 @@
+meta:
+  name: art
+  version: 1
+  release: 0
+  arch: amd64
+  maintainer: AtosSE <no-reply@atos.net>
+  license: Apache 2.0
+  url: atos.net
+  vendor: AtosSE
+  summary: |-
+    Artisan automation tool
+  description: |-
+    Powerfull tool to deliver today's Microservices
+files:
+  generic:
+    - destination: /bin/art
+      source: /Users/eduardgevorkyan/Desktop/art/art
+      owner: root
+      group: root
+preinstall:
+  - echo art installation started;
+postinstall:
+  - echo art installation finished successfully;
+preuninstall:
+  - echo art uninstalling;
+postuninstall:
+  - echo art uninstalled successfully;
+signature:
+  type: origin
+  private_key: gatblau-priv.asc
+  pass_phrase: h3783T@dF%an
+
