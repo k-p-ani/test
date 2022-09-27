@@ -52,6 +52,7 @@ functions:
   # this function is used by CI pipeline
   - name: build-app
     description: compiles and tests the application
+    runtime: spring
     run:
       - gradle build
       - mkdir build/build
@@ -64,6 +65,7 @@ functions:
   # this function is used by CI pipeline
   - name: publish-app
     description: packages and publishes the application
+    runtime: spring
     run:
       - art build -t=${APP_PACKAGE_NAME} -p app
       - art push ${APP_PACKAGE_NAME} -u=${ART_REG_USER}:${ART_REG_PWD}
