@@ -54,7 +54,7 @@ functions:
     description: compiles and tests the application
     runtime: spring
     run:
-      - echo 'Benchmarking $((pwd))...'
+      - sh -c 'echo Benchmarking $((pwd)) ...'
       - gradle build
       - mkdir build/build
       - cp build/libs/${PROJECT_ARTIFACT_ID}-${PROJECT_ARTIFACT_VERSION}-SNAPSHOT.jar build/build
