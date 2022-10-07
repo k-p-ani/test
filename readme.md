@@ -18,10 +18,4 @@ art runc publish-app
 ```bash
 art runc build-image
 ```
-webhook testing
-webhook testing2 with authentication
-webhook testing3 with authentication
-webhook testing5 with authentication
-webhook testing6 with authentication
-webhook testing7 with authentication
 
