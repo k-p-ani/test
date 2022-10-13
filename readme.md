@@ -18,5 +18,3 @@ art runc publish-app
 ```bash
 art runc build-image
 ```
-testing new art runner
-
